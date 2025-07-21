@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SmartExpense Design System - Financial App Colors */
+
+@layer base {
+  :root {
+    /* Core Background & Text */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    /* Card System */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    /* Popovers */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Financial Trust Blue */
+    --primary: 210 100% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 100% 65%;
+
+    /* Secondary - Subtle Gray */
+    --secondary: 210 15% 95%;
+    --secondary-foreground: 215 25% 20%;
+
+    /* Muted Elements */
+    --muted: 210 15% 96%;
+    --muted-foreground: 215 15% 50%;
+
+    /* Accent - Success Green */
+    --accent: 142 76% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive - Expense Red */
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Form Elements */
+    --border: 210 20% 90%;
+    --input: 210 20% 95%;
+    --ring: 210 100% 45%;
+
+    /* Financial App Specific Colors */
+    --income: 142 76% 36%;
+    --income-foreground: 0 0% 100%;
+    --expense: 0 85% 60%;
+    --expense-foreground: 0 0% 100%;
+    --savings: 45 93% 58%;
+    --savings-foreground: 215 25% 15%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210, 100%, 45%), hsl(210, 100%, 65%));
+    --gradient-card: linear-gradient(145deg, hsl(0, 0%, 100%), hsl(210, 15%, 98%));
+    --gradient-income: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(142, 76%, 56%));
+    --gradient-expense: linear-gradient(135deg, hsl(0, 85%, 60%), hsl(0, 85%, 75%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 12px -2px hsl(210, 25%, 15%, 0.08);
+    --shadow-primary: 0 8px 25px -8px hsl(210, 100%, 45%, 0.35);
+    --shadow-glow: 0 0 40px hsl(210, 100%, 65%, 0.2);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Core Background & Text */
+    --background: 215 25% 8%;
+    --foreground: 210 15% 90%;
+
+    /* Card System */
+    --card: 215 25% 10%;
+    --card-foreground: 210 15% 90%;
+
+    /* Popovers */
+    --popover: 215 25% 10%;
+    --popover-foreground: 210 15% 90%;
+
+    /* Primary - Financial Trust Blue */
+    --primary: 210 100% 60%;
+    --primary-foreground: 215 25% 8%;
+    --primary-glow: 210 100% 75%;
+
+    /* Secondary - Dark Gray */
+    --secondary: 215 25% 15%;
+    --secondary-foreground: 210 15% 85%;
+
+    /* Muted Elements */
+    --muted: 215 25% 12%;
+    --muted-foreground: 215 15% 60%;
+
+    /* Accent - Success Green */
+    --accent: 142 76% 45%;
+    --accent-foreground: 215 25% 8%;
+
+    /* Destructive - Expense Red */
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 215 25% 8%;
+
+    /* Form Elements */
+    --border: 215 25% 18%;
+    --input: 215 25% 15%;
+    --ring: 210 100% 60%;
+
+    /* Financial App Specific Colors */
+    --income: 142 76% 45%;
+    --income-foreground: 215 25% 8%;
+    --expense: 0 85% 65%;
+    --expense-foreground: 215 25% 8%;
+    --savings: 45 93% 65%;
+    --savings-foreground: 215 25% 8%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210, 100%, 60%), hsl(210, 100%, 75%));
+    --gradient-card: linear-gradient(145deg, hsl(215, 25%, 10%), hsl(215, 25%, 12%));
+    --gradient-income: linear-gradient(135deg, hsl(142, 76%, 45%), hsl(142, 76%, 60%));
+    --gradient-expense: linear-gradient(135deg, hsl(0, 85%, 65%), hsl(0, 85%, 75%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 12px -2px hsl(0, 0%, 0%, 0.25);
+    --shadow-primary: 0 8px 25px -8px hsl(210, 100%, 60%, 0.4);
+    --shadow-glow: 0 0 40px hsl(210, 100%, 75%, 0.15);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+@layer utilities {
+  /* Financial App Utilities */
+  .card-gradient {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+  }
+  
+  .primary-gradient {
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-primary);
+  }
+  
+  .income-gradient {
+    background: var(--gradient-income);
+  }
+  
+  .expense-gradient {
+    background: var(--gradient-expense);
+  }
+  
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.4s ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

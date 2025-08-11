@@ -2,7 +2,7 @@
 📄 Project Overview
 This is a modern, high-performance web application built using the latest frontend technologies. It's fully customizable, responsive, and designed for a great developer and user experience.
 
-🔗 Live URL: [https://lovable.dev/projects/29b76193-7370-45d6-9081-c1614a4a2557](https://expenses-tracker-pi-nine.vercel.app/)
+🔗 Live URL: https://expenses-tracker-pi-nine.vercel.app/
 
 🛠️ How to Run and Edit Locally
 You can easily work on this project using your preferred code editor like VS Code.
